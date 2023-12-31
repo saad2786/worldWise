@@ -1,0 +1,64 @@
+{
+  "cities": [
+    {
+      "cityName": "Dalfsen",
+      "country": "Netherlands (Kingdom of the)",
+      "date": "2023-12-31T17:32:04.891Z",
+      "notes": "",
+      "emoji": "🇳🇱",
+      "position": {
+        "lat": "52.58027786178881",
+        "lng": "6.280368815377614"
+      },
+      "id": 1
+    },
+    {
+      "cityName": "Asahreppur",
+      "country": "Iceland",
+      "date": "2023-12-31T17:33:39.344Z",
+      "notes": "",
+      "emoji": "🇮🇸",
+      "position": {
+        "lat": "64.35719297384499",
+        "lng": "-18.549462488592642"
+      },
+      "id": 2
+    },
+    {
+      "cityName": "Ilulissat",
+      "country": "Greenland",
+      "date": "2023-12-31T17:33:43.360Z",
+      "notes": "",
+      "emoji": "🇬🇱",
+      "position": {
+        "lat": "75.79832924751295",
+        "lng": "-44.141202181624536"
+      },
+      "id": 3
+    },
+    {
+      "cityName": "Funafuti",
+      "country": "Tuvalu",
+      "date": "2023-12-31T17:34:16.553Z",
+      "notes": "",
+      "emoji": "🇹🇻",
+      "position": {
+        "lat": "-8.065029519001902",
+        "lng": "178.37831297257793"
+      },
+      "id": 4
+    },
+    {
+      "cityName": "Najaf",
+      "country": "Iraq",
+      "date": "2023-12-31T17:34:37.297Z",
+      "notes": "",
+      "emoji": "🇮🇶",
+      "position": {
+        "lat": "32.212551499118",
+        "lng": "44.14347248842085"
+      },
+      "id": 5
+    }
+  ]
+}
