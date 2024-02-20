@@ -1,3 +1,4 @@
+import { useCallback } from 'react'
 import {
   createContext,
   useContext,
@@ -111,17 +112,20 @@ function CitiesProvider({ children }) {
     }
   }
 
-  async function getCity(id) {
-    if (parseInt(id) === currentCity.id) return
-    dispatch({ type: 'loading' })
-    try {
-      const res = await fetch(`${BASE_URL}/cities/${id}`)
-      const data = await res.json()
-      dispatch({ type: 'city/loaded', payload: data })
-    } catch {
-      dispatch({ type: 'rejected', payload: 'There is an Shit occure' })
-    }
-  }
+  const getCity = useCallback(
+    async function getCity(id) {
+      if (parseInt(id) === currentCity.id) return
+      dispatch({ type: 'loading' })
+      try {
+        const res = await fetch(`${BASE_URL}/cities/${id}`)
+        const data = await res.json()
+        dispatch({ type: 'city/loaded', payload: data })
+      } catch {
+        dispatch({ type: 'rejected', payload: 'There is an Shit occure' })
+      }
+    },
+    [createCity.id],
+  )
   return (
     <CitiesContext.Provider
       value={{
